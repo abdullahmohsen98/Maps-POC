@@ -1,7 +1,16 @@
 {
   "Version": 1,
   "WorkspaceRootPath": "E:\\Work\\POC\\Maps-POC\\Maps-POC\\",
-  "Documents": [],
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{3656567A-CBC2-4AFE-9710-F5B353B5D234}|Maps-POC.csproj|e:\\work\\poc\\maps-poc\\maps-poc\\components\\pages\\home.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{3656567A-CBC2-4AFE-9710-F5B353B5D234}|Maps-POC.csproj|solutionrelative:components\\pages\\home.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3656567A-CBC2-4AFE-9710-F5B353B5D234}|Maps-POC.csproj|e:\\work\\poc\\maps-poc\\maps-poc\\components\\pages\\googlemapcomponent.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{3656567A-CBC2-4AFE-9710-F5B353B5D234}|Maps-POC.csproj|solutionrelative:components\\pages\\googlemapcomponent.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    }
+  ],
   "DocumentGroupContainers": [
     {
       "Orientation": 1,
@@ -9,11 +18,36 @@
       "DocumentGroups": [
         {
           "DockedHeight": 192,
-          "SelectedChildIndex": -1,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Home.razor",
+              "DocumentMoniker": "E:\\Work\\POC\\Maps-POC\\Maps-POC\\Components\\Pages\\Home.razor",
+              "RelativeDocumentMoniker": "Components\\Pages\\Home.razor",
+              "ToolTip": "E:\\Work\\POC\\Maps-POC\\Maps-POC\\Components\\Pages\\Home.razor",
+              "RelativeToolTip": "Components\\Pages\\Home.razor",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAYAAAAYAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-12-17T14:01:55.014Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "GoogleMapComponent.razor",
+              "DocumentMoniker": "E:\\Work\\POC\\Maps-POC\\Maps-POC\\Components\\Pages\\GoogleMapComponent.razor",
+              "RelativeDocumentMoniker": "Components\\Pages\\GoogleMapComponent.razor",
+              "ToolTip": "E:\\Work\\POC\\Maps-POC\\Maps-POC\\Components\\Pages\\GoogleMapComponent.razor",
+              "RelativeToolTip": "Components\\Pages\\GoogleMapComponent.razor",
+              "ViewState": "AQIAAA8AAAAAAAAAAAAAABYAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-12-17T14:01:34.84Z"
             }
           ]
         },
