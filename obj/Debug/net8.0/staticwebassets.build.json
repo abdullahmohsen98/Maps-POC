@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "Z0EPV75BHGUTRLL1lCGO2Of2M+6QxqNjcVFqOLx0KNE=",
+  "Hash": "vW//dRmirf4lLbesdTlrlShE3wGWSsQnf5MQGzkIkG4=",
   "Source": "Maps-POC",
   "BasePath": "_content/Maps-POC",
   "Mode": "Default",
@@ -10,17 +10,17 @@
     {
       "Name": "Maps-POC\\wwwroot",
       "Source": "Maps-POC",
-      "ContentRoot": "E:\\Work\\POC\\Maps-POC\\Maps-POC\\Maps-POC\\wwwroot\\",
+      "ContentRoot": "E:\\Work\\POC\\Maps-POC\\Maps-POC\\wwwroot\\",
       "BasePath": "_content/Maps-POC",
       "Pattern": "**"
     }
   ],
   "Assets": [
     {
-      "Identity": "E:\\Work\\POC\\Maps-POC\\Maps-POC\\Maps-POC\\obj\\Debug\\net8.0\\scopedcss\\bundle\\Maps-POC.styles.css",
+      "Identity": "E:\\Work\\POC\\Maps-POC\\Maps-POC\\obj\\Debug\\net8.0\\scopedcss\\bundle\\Maps-POC.styles.css",
       "SourceId": "Maps-POC",
       "SourceType": "Computed",
-      "ContentRoot": "E:\\Work\\POC\\Maps-POC\\Maps-POC\\Maps-POC\\obj\\Debug\\net8.0\\scopedcss\\bundle\\",
+      "ContentRoot": "E:\\Work\\POC\\Maps-POC\\Maps-POC\\obj\\Debug\\net8.0\\scopedcss\\bundle\\",
       "BasePath": "_content/Maps-POC",
       "RelativePath": "Maps-POC.styles.css",
       "AssetKind": "All",
@@ -33,13 +33,13 @@
       "AssetTraitValue": "ApplicationBundle",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "E:\\Work\\POC\\Maps-POC\\Maps-POC\\Maps-POC\\obj\\Debug\\net8.0\\scopedcss\\bundle\\Maps-POC.styles.css"
+      "OriginalItemSpec": "E:\\Work\\POC\\Maps-POC\\Maps-POC\\obj\\Debug\\net8.0\\scopedcss\\bundle\\Maps-POC.styles.css"
     },
     {
-      "Identity": "E:\\Work\\POC\\Maps-POC\\Maps-POC\\Maps-POC\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\Maps-POC.bundle.scp.css",
+      "Identity": "E:\\Work\\POC\\Maps-POC\\Maps-POC\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\Maps-POC.bundle.scp.css",
       "SourceId": "Maps-POC",
       "SourceType": "Computed",
-      "ContentRoot": "E:\\Work\\POC\\Maps-POC\\Maps-POC\\Maps-POC\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\",
+      "ContentRoot": "E:\\Work\\POC\\Maps-POC\\Maps-POC\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\",
       "BasePath": "_content/Maps-POC",
       "RelativePath": "Maps-POC.bundle.scp.css",
       "AssetKind": "All",
@@ -52,13 +52,13 @@
       "AssetTraitValue": "ProjectBundle",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "E:\\Work\\POC\\Maps-POC\\Maps-POC\\Maps-POC\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\Maps-POC.bundle.scp.css"
+      "OriginalItemSpec": "E:\\Work\\POC\\Maps-POC\\Maps-POC\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\Maps-POC.bundle.scp.css"
     },
     {
-      "Identity": "E:\\Work\\POC\\Maps-POC\\Maps-POC\\Maps-POC\\wwwroot\\app.css",
+      "Identity": "E:\\Work\\POC\\Maps-POC\\Maps-POC\\wwwroot\\app.css",
       "SourceId": "Maps-POC",
       "SourceType": "Discovered",
-      "ContentRoot": "E:\\Work\\POC\\Maps-POC\\Maps-POC\\Maps-POC\\wwwroot\\",
+      "ContentRoot": "E:\\Work\\POC\\Maps-POC\\Maps-POC\\wwwroot\\",
       "BasePath": "_content/Maps-POC",
       "RelativePath": "app.css",
       "AssetKind": "All",
@@ -74,10 +74,10 @@
       "OriginalItemSpec": "wwwroot\\app.css"
     },
     {
-      "Identity": "E:\\Work\\POC\\Maps-POC\\Maps-POC\\Maps-POC\\wwwroot\\bootstrap\\bootstrap.min.css",
+      "Identity": "E:\\Work\\POC\\Maps-POC\\Maps-POC\\wwwroot\\bootstrap\\bootstrap.min.css",
       "SourceId": "Maps-POC",
       "SourceType": "Discovered",
-      "ContentRoot": "E:\\Work\\POC\\Maps-POC\\Maps-POC\\Maps-POC\\wwwroot\\",
+      "ContentRoot": "E:\\Work\\POC\\Maps-POC\\Maps-POC\\wwwroot\\",
       "BasePath": "_content/Maps-POC",
       "RelativePath": "bootstrap/bootstrap.min.css",
       "AssetKind": "All",
@@ -93,10 +93,10 @@
       "OriginalItemSpec": "wwwroot\\bootstrap\\bootstrap.min.css"
     },
     {
-      "Identity": "E:\\Work\\POC\\Maps-POC\\Maps-POC\\Maps-POC\\wwwroot\\bootstrap\\bootstrap.min.css.map",
+      "Identity": "E:\\Work\\POC\\Maps-POC\\Maps-POC\\wwwroot\\bootstrap\\bootstrap.min.css.map",
       "SourceId": "Maps-POC",
       "SourceType": "Discovered",
-      "ContentRoot": "E:\\Work\\POC\\Maps-POC\\Maps-POC\\Maps-POC\\wwwroot\\",
+      "ContentRoot": "E:\\Work\\POC\\Maps-POC\\Maps-POC\\wwwroot\\",
       "BasePath": "_content/Maps-POC",
       "RelativePath": "bootstrap/bootstrap.min.css.map",
       "AssetKind": "All",
@@ -112,10 +112,10 @@
       "OriginalItemSpec": "wwwroot\\bootstrap\\bootstrap.min.css.map"
     },
     {
-      "Identity": "E:\\Work\\POC\\Maps-POC\\Maps-POC\\Maps-POC\\wwwroot\\favicon.png",
+      "Identity": "E:\\Work\\POC\\Maps-POC\\Maps-POC\\wwwroot\\favicon.png",
       "SourceId": "Maps-POC",
       "SourceType": "Discovered",
-      "ContentRoot": "E:\\Work\\POC\\Maps-POC\\Maps-POC\\Maps-POC\\wwwroot\\",
+      "ContentRoot": "E:\\Work\\POC\\Maps-POC\\Maps-POC\\wwwroot\\",
       "BasePath": "_content/Maps-POC",
       "RelativePath": "favicon.png",
       "AssetKind": "All",

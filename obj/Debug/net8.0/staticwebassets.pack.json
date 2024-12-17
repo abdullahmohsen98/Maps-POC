@@ -1,23 +1,23 @@
 {
   "Files": [
     {
-      "Id": "E:\\Work\\POC\\Maps-POC\\Maps-POC\\Maps-POC\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\Maps-POC.bundle.scp.css",
+      "Id": "E:\\Work\\POC\\Maps-POC\\Maps-POC\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\Maps-POC.bundle.scp.css",
       "PackagePath": "staticwebassets\\Maps-POC.bundle.scp.css"
     },
     {
-      "Id": "E:\\Work\\POC\\Maps-POC\\Maps-POC\\Maps-POC\\wwwroot\\app.css",
+      "Id": "E:\\Work\\POC\\Maps-POC\\Maps-POC\\wwwroot\\app.css",
       "PackagePath": "staticwebassets\\app.css"
     },
     {
-      "Id": "E:\\Work\\POC\\Maps-POC\\Maps-POC\\Maps-POC\\wwwroot\\bootstrap\\bootstrap.min.css",
+      "Id": "E:\\Work\\POC\\Maps-POC\\Maps-POC\\wwwroot\\bootstrap\\bootstrap.min.css",
       "PackagePath": "staticwebassets\\bootstrap\\bootstrap.min.css"
     },
     {
-      "Id": "E:\\Work\\POC\\Maps-POC\\Maps-POC\\Maps-POC\\wwwroot\\bootstrap\\bootstrap.min.css.map",
+      "Id": "E:\\Work\\POC\\Maps-POC\\Maps-POC\\wwwroot\\bootstrap\\bootstrap.min.css.map",
       "PackagePath": "staticwebassets\\bootstrap\\bootstrap.min.css.map"
     },
     {
-      "Id": "E:\\Work\\POC\\Maps-POC\\Maps-POC\\Maps-POC\\wwwroot\\favicon.png",
+      "Id": "E:\\Work\\POC\\Maps-POC\\Maps-POC\\wwwroot\\favicon.png",
       "PackagePath": "staticwebassets\\favicon.png"
     },
     {
