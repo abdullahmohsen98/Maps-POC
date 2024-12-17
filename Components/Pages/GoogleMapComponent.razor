@@ -1,0 +1,172 @@
+﻿@page "/map"
+@inject IJSRuntime JS
+
+<h3>Google Maps with Highlighted Location</h3>
+
+<div id="map" style="height: 500px; width: 100%;"></div>
+
+<div id="location-list" style="margin-top: 20px;">
+    <h4>Available Locations:</h4>
+    <div id="buttons-container"></div>
+</div>
+
+<div id="lat-lng-display" style="margin-top: 20px; font-weight: bold;">
+    Click on the map to see latitude and longitude here!
+</div>
+
+@code {
+    private IJSObjectReference _jsModule;
+
+    protected override async Task OnAfterRenderAsync(bool firstRender)
+    {
+        if (firstRender)
+        {
+            // Load the JavaScript logic
+            // _jsModule = await JS.InvokeAsync<IJSObjectReference>("import", "./_content/MapComponent.js");
+            await _jsModule.InvokeVoidAsync("initMap");
+        }
+    }
+}
+
+<script>
+    let map;
+    let markers = [];
+    let activeMarker = null; // Track the currently selected marker
+    let activeButton = null; // Track the currently active button
+    const latLngDisplay = document.getElementById("lat-lng-display");
+
+    // Default and highlighted marker icons
+    const defaultIcon = "http://maps.google.com/mapfiles/ms/icons/red-dot.png";
+    const highlightedIcon = "http://maps.google.com/mapfiles/ms/icons/blue-dot.png";
+
+    // Predefined locations
+    const predefinedLocations = [
+        { id: 1, name: "New York City", lat: 40.7128, lng: -74.0060 },
+        { id: 2, name: "Los Angeles", lat: 34.0522, lng: -118.2437 },
+        { id: 3, name: "Chicago", lat: 41.8781, lng: -87.6298 },
+        { id: 4, name: "Houston", lat: 29.7604, lng: -95.3698 },
+        { id: 5, name: "San Francisco", lat: 37.7749, lng: -122.4194 }
+    ];
+
+    // Initialize the Google Map
+    function initMap() {
+        const defaultCenter = { lat: 39.8283, lng: -98.5795 }; // Center of the USA
+
+        map = new google.maps.Map(document.getElementById("map"), {
+            center: defaultCenter,
+            zoom: 4,
+        });
+
+        // Add click listener for the map to retrieve lat/lng
+        map.addListener("click", (e) => {
+            const clickedLat = e.latLng.lat();
+            const clickedLng = e.latLng.lng();
+
+            // Display lat and lng
+            latLngDisplay.textContent = `Clicked Location: Latitude: ${clickedLat.toFixed(6)}, Longitude: ${clickedLng.toFixed(6)}`;
+            alert(latLngDisplay.textContent);
+
+            // Add a temporary marker
+            addTemporaryMarker(e.latLng);
+        });
+
+        // Add markers for predefined locations
+        predefinedLocations.forEach((location, index) => {
+            const marker = new google.maps.Marker({
+                position: { lat: location.lat, lng: location.lng },
+                map: map,
+                title: location.name,
+                icon: defaultIcon
+            });
+
+            // Add click event listener to each marker
+            marker.addListener('click', () => {
+                highlightMarker(marker, location);
+            });
+
+            // Add marker to the array
+            markers.push(marker);
+        });
+
+        // Generate buttons for predefined locations
+        generateLocationButtons();
+    }
+
+    // Highlight a marker and reset others
+    function highlightMarker(marker, location) {
+        // Reset the previous marker's icon
+        if (activeMarker) {
+            activeMarker.setIcon(defaultIcon);
+        }
+
+        // Set the new marker's icon
+        marker.setIcon(highlightedIcon);
+        activeMarker = marker;
+
+        // Update the map center and zoom
+        map.setCenter(marker.getPosition());
+        map.setZoom(8);
+
+        // Synchronize button highlighting
+        highlightButton(location.id);
+
+        // Display the lat and lng
+        latLngDisplay.textContent = `You selected: ${location.name}, Latitude: ${location.lat}, Longitude: ${location.lng}`;
+        alert(latLngDisplay.textContent);
+    }
+
+    // Highlight a button and reset others
+    function highlightButton(locationId) {
+        const buttons = document.querySelectorAll("#buttons-container button");
+
+        buttons.forEach(button => {
+            if (parseInt(button.dataset.id) === locationId) {
+                button.classList.add("active");
+                activeButton = button;
+            } else {
+                button.classList.remove("active");
+            }
+        });
+    }
+
+    // Generate buttons for predefined locations
+    function generateLocationButtons() {
+        const container = document.getElementById("buttons-container");
+
+        predefinedLocations.forEach(location => {
+            const button = document.createElement("button");
+            button.textContent = location.name;
+            button.dataset.id = location.id;
+
+            // Button click event
+            button.addEventListener('click', () => {
+                const marker = markers.find((m, index) => predefinedLocations[index].id === location.id);
+                if (marker) {
+                    highlightMarker(marker, location);
+                }
+            });
+
+            container.appendChild(button);
+        });
+    }
+
+    // Add a temporary marker at clicked location
+    function addTemporaryMarker(latLng) {
+        // Remove previous temporary markers if any
+        if (activeMarker) {
+            activeMarker.setMap(null);
+        }
+
+        const tempMarker = new google.maps.Marker({
+            position: latLng,
+            map: map,
+            title: "Temporary Location",
+            icon: "http://maps.google.com/mapfiles/ms/icons/green-dot.png"
+        });
+
+        activeMarker = tempMarker;
+    }
+</script>
+
+<!-- Include Google Maps JS API -->
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA3aQDD23bSJ6f6YMgauVNmBw6AiC3BLi0&callback=initMap" async defer></script>

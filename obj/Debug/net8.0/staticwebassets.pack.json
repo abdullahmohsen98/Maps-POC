@@ -1,0 +1,41 @@
+{
+  "Files": [
+    {
+      "Id": "E:\\Work\\POC\\Maps-POC\\Maps-POC\\Maps-POC\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\Maps-POC.bundle.scp.css",
+      "PackagePath": "staticwebassets\\Maps-POC.bundle.scp.css"
+    },
+    {
+      "Id": "E:\\Work\\POC\\Maps-POC\\Maps-POC\\Maps-POC\\wwwroot\\app.css",
+      "PackagePath": "staticwebassets\\app.css"
+    },
+    {
+      "Id": "E:\\Work\\POC\\Maps-POC\\Maps-POC\\Maps-POC\\wwwroot\\bootstrap\\bootstrap.min.css",
+      "PackagePath": "staticwebassets\\bootstrap\\bootstrap.min.css"
+    },
+    {
+      "Id": "E:\\Work\\POC\\Maps-POC\\Maps-POC\\Maps-POC\\wwwroot\\bootstrap\\bootstrap.min.css.map",
+      "PackagePath": "staticwebassets\\bootstrap\\bootstrap.min.css.map"
+    },
+    {
+      "Id": "E:\\Work\\POC\\Maps-POC\\Maps-POC\\Maps-POC\\wwwroot\\favicon.png",
+      "PackagePath": "staticwebassets\\favicon.png"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.Maps-POC.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.build.Maps-POC.props",
+      "PackagePath": "build\\Maps-POC.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildMultiTargeting.Maps-POC.props",
+      "PackagePath": "buildMultiTargeting\\Maps-POC.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildTransitive.Maps-POC.props",
+      "PackagePath": "buildTransitive\\Maps-POC.props"
+    }
+  ],
+  "ElementsToRemove": []
+}
